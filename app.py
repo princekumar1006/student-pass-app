@@ -25,10 +25,10 @@ if st.button("Predict Result"):
     input_data = np.array([[study_hours, attendance]])
     prediction = model.predict(input_data)
 
-    if prediction[0] == 1:
+    if prediction[0] == "1":
        st.success("Prediction: PASS")
     else:
-        st.error("Prediction: FAIL")
+       st.error("Prediction: FAIL")
 """
 
 with open("app.py", "w") as f:
