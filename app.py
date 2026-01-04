@@ -26,7 +26,7 @@ if st.button("Predict Result"):
     prediction = model.predict(input_data)
 
     if prediction[0] == 1:
-        st.success("Prediction: PASS")
+       st.success("Prediction: PASS")
     else:
         st.error("Prediction: FAIL")
 """
